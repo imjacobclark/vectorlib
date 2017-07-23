@@ -12,6 +12,8 @@ void append(Vector *vector, int value);
 void prepend(Vector *vector, int value);
 int pop(Vector *vector);
 void delete(Vector *vector, int index);
+void delete_value(Vector *vector, int value);
+int find_value(Vector *vector, int value);
 void set(Vector *vector, int index, int value);
 void resize(Vector *vector);
 int size(Vector *vector);

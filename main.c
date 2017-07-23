@@ -41,5 +41,11 @@ int main(){
     printf("Getting value 7: %d\n", get(&vector, 7));
     printf("Getting value 8: %d\n", get(&vector, 8));
 
+    delete_value(&vector, 1);
+    printf("Getting value 1: %d\n", get(&vector, 1));
+
+    printf("Finding value 2: %d\n", find_value(&vector, 2));
+    printf("Finding value 22: %d\n", find_value(&vector, 22));
+
     free_memory(&vector);
 }

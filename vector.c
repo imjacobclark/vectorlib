@@ -50,6 +50,24 @@ void delete(Vector *vector, int index){
     vector->size = vector->size - 1;
 }
 
+void delete_value(Vector *vector, int value){
+    for(int i = 0; i < vector->size; i++){
+        if(vector->data[i] == value){
+            delete(vector, i);
+        }
+    }
+}
+
+int find_value(Vector *vector, int value){
+    for(int i = 0; i < vector->size; i++){
+        if(vector->data[i] == value){
+            return i;
+        }
+    }
+
+    return -1;
+}
+
 void resize(Vector *vector){
     if(vector->size >= vector->capacity){
         vector->capacity *= 2;
